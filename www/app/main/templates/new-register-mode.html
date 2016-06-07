@@ -1,0 +1,24 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons"></div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    </div>
+    <ion-content class="padding churchs-content" scrollbar-y="false">
+        <img src="img/image_food.png" class="new-register-image_food"/>
+        <button class="button button-full button-balanced" ng-click="registerWithFacebook()">
+            <img src="img/icons/icon_facebook_white.png" class="icon-in-red-button"/>
+            <span class="text-in-red-button" translate>REGISTER_WITH_FACEBOOK</span>
+        </button>
+        <button class="button button-full button-balanced" ng-click="gotoRegister()">
+            <img src="img/icons/icon_email_white.png" class="icon-in-red-button"/>
+            <span class="text-in-red-button" translate>REGISTER_WITH_EMAIL</span>
+        </button>
+        <button class="button button-full button-balanced" ng-click="gotoMain()" translate>SKIP</button>
+    </ion-content>
+</ion-pane>

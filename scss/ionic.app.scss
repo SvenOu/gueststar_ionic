@@ -1,0 +1,65 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+*/
+
+//Custom sass
+//订制基础颜色，与设计图一致
+$c1_1: #f2e9dc;
+$c1_2: #ffffff;
+$c1_3: #959595;
+$c1_4: #e7e7e7;
+$c2_1: #d72c20;
+$c2_2: #96070a;
+$c2_3: #d4334a;
+$c3_1: #d99a29;
+$c3_2: #ffcb04;
+
+$light:                           $c1_1 !default;
+$stable:                          $c1_2 !default;
+$positive:                        $c1_3 !default;
+$calm:                            $c1_4 !default;
+$balanced:                        $c2_1 !default;
+$energized:                       $c2_2 !default;
+$assertive:                       $c2_3 !default;
+$royal:                           $c3_1 !default;
+$dark:                            $c3_2 !default;
+
+$button-dark-active-bg:       $c1_3 !default;
+
+//订制基础字体
+@font-face {
+  font-family: 'ChurchsFont';
+  src: url('font/Futura_Bold.ttf') format('truetype');
+  src: url('font/Archer_Semibold_Pro.otf') format('opentype'),
+  url('font/Archer_Bold_Pro.otf') format('opentype'),
+  url('font/Futura_Bold.ttf') format('truetype'),
+  url('font/Archer_Medium_Pro.otf') format('opentype'),
+  url('font/Archer_MediumItal_Pro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('font/Futura_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-base:                'ChurchsFont' !default;
+
+$base-background-color:           $c1_2 !default;
+$link-color:                       $c2_1 !default;
+
+$input-color:                     $energized !default;
+$input-label-color:              $energized !default;
+$input-color-placeholder:         lighten($energized, 40%) !default;
+
+//$button-large-icon-size:         1.3em !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+

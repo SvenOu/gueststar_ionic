@@ -1,0 +1,74 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <img src="img/icons/icon_facebook.png" class="header-bar-icon-facebook"/>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img ng-click="copyDatabaseToSdCard()" src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" has-bouncing="false" scrollbar-y="false">
+        <div class="padding churchs-header-title" ng-if="!hasCoupon" translate>MYCHURCHS_UP</div>
+        <img src="img/image_home_food.png" class="home-image_food" ng-if="!hasCoupon"/>
+        <ion-slide-box class="ion-slide-box-hide-side-page" on-slide-changed="couponSlideHasChanged($index)" ng-if="hasCoupon">
+            <ion-slide ng-repeat="item in testCouponsData">
+                <div class="box">
+                    <div class="main-coupon-container">
+                        <img src="img/icons/image_coupon_arrow_left.png" ng-show="couponLeftIconController($index)" class="main-coupon-privious-icon"/>
+                        <img src="img/LCP1410274340944YRHV.jpg" class="main-coupon-image"/>
+                        <img src="img/icons/image_coupon_arrow_right.png"ng-show="couponRightIconController($index)" class="main-coupon-nex-icon"/>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="churchs-wrap-container"></div>
+        <label class="item-stable item-input churchs-zip-input-item">
+            <input type="text" placeholder="{{ 'ZIP_HINT' | translate }}">
+        </label>
+        <div class="row main-menu-row">
+            <Button class="button button-calm col main-menu-button" ng-click="gotoNewExperience()">
+                <img src="img/icons/icon_comments.png"/>
+                <span class="main-menu-red-text" translate>FEEDBACK</span>
+            </Button>
+            <Button class="button button-balanced col main-menu-button" ng-click="gotoRewards()">
+                <img src="img/icons/icon_reward_my_visit.png"/>
+                <span class="main-menu-light-text" translate>REWARDS</span>
+            </Button>
+            <Button class="button button-energized col main-menu-button" ng-click="gotoCoupons()">
+                <label class="main-coupon-count">
+                    <label class="main-coupon-count-number">11</label>
+                </label>
+                <img src="img/icons/icon_my_savings.png"/>
+                <span class="main-menu-light-text" translate>SAVINGS</span>
+            </Button>
+        </div>
+        <div class="row main-menu-row">
+            <Button class="button button-royal col main-menu-button" ng-click="gotoMenus()">
+                <img src="img/icons/icon_menu.png"/>
+                <span class="main-menu-red-text" translate>MUNU</span>
+            </Button>
+            <Button class="button button-dark col main-menu-button" ng-click="gotoFindLocation()">
+                <img src="img/icons/icon_find_churchs.png"/>
+                <span class="main-menu-red-text" translate>LOCATINS</span>
+            </Button>
+            <Button class="button button-calm col main-menu-button" ng-click="gotoProfile()">
+                <img src="img/icons/icon_my_churchs.png"/>
+                <span class="main-menu-red-text" translate>MYCHURCHS</span>
+            </Button>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-energized">
+        <div class="buttons">
+            <img src="img/icons/icon_about.png" class="bottom-bar-icon-about" ng-click="showAboutDialog()"/>
+        </div>
+        <div class="title">
+            <span class="main-menu-light-text bottom-bar-copyright-text" translate="COPYRIGHT"
+                  translate-values="{version:'1.9.1'}">COPYRIGHT</span>
+        </div>
+        <div class="buttons"></div>
+    </ion-footer-bar>
+</ion-pane>

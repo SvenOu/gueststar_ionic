@@ -1,0 +1,33 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button" ng-click="gotoMain()" translate>HOME</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" has-bouncing="false" scrollbar-y="false">
+        <div class="padding churchs-header-title" translate>LOCATION_UP</div>
+        <div class="churchs-location-content">
+            <div class="location-red-label" translate>FIND_LOCATIONS_NEAR</div>
+            <button class="button button-full button-balanced" ng-click="gotoDetailLocation()">
+                <img src="img/icons/icon_location.png" class="icon-in-red-button"/>
+                <span class="text-in-red-button" translate>MY_CURRENT_LOCATION</span>
+            </button>
+            <div class="item item-input-inset churchs-location-search-btn">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="{{ 'ZIP_OR_ADDRESS' | translate }}">
+                </label>
+                <button class="button button-balanced">
+                    <img src="img/icons/icon_find.png" class="icon-in-red-button"/>
+                </button>
+            </div>
+            <div class="churchs-wrap-container"></div>
+        </div>
+    </ion-content>
+</ion-pane>

@@ -1,0 +1,56 @@
+<form name="profileForm" class="profile-full-form" novalidate>
+    <ion-pane class="base-background">
+        <div class="bar bar-header churchs-header-bar">
+            <div class="buttons"></div>
+            <div class="title churchs-header-bar-logo">
+                <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+            </div>
+            <div class="buttons">
+                <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+            </div>
+        </div>
+        <ion-content class="churchs-content" scrollbar-y="false">
+            <div class="padding churchs-header-title" translate>WELCOME_CHS</div>
+            <div class="padding churchs-sub-header-title" translate>CHURCHS_INFO</div>
+            <div class="churchs-profile-form">
+                <label class="churchs-bottom-diliver-item item-stable item-input">
+                    <span class="input-label" translate>NAME_STAR</span>
+                    <input type="text" name="firstName" ng-model="userProfile.firstName" required>
+                </label>
+                <label class="churchs-bottom-diliver-item item-stable item-input">
+                    <span class="input-label" translate>EMAIL_STAR</span>
+                    <input type="email" name="email" ng-model="userProfile.email" required>
+                </label>
+                <label class="churchs-bottom-diliver-item item-stable item-input">
+                <span class="input-label">
+                    <p class="churchs-no-margin-label" translate>BIRTHDAY_STAR</p>
+                    <p class="churchs-smail-label" translate>BIRTHDAY_DESC</p>
+                </span>
+                    <input type="date" name="dob" ng-model="userProfile.dob" required>
+                </label>
+                <label class="churchs-bottom-diliver-item item-stable item-input">
+                    <span class="input-label" translate>MOBILE_STAR</span>
+                    <input type="tel" name="phone" ng-model="userProfile.phone">
+                </label>
+                <label class="churchs-bottom-diliver-item item-stable item-input">
+                    <span class="input-label" translate>ZIP</span>
+                    <input type="text" name="zip" ng-model="userProfile.zip" required>
+                </label>
+                <label class="item-stable item-input churchs-checkbox-item">
+                    <span class="input-label" translate>RECEIVE_MAKRTING</span>
+                    <input type="checkbox" name="myChurchs" ng-model="userProfile.myChurchs">
+                </label>
+            </div>
+        </ion-content>
+        <ion-footer-bar class="bar churchs-bottom-bar">
+            <div class="buttons churchs-bottom-bar-buttons-50">
+                <button class="button button-balanced button-full" ng-click="registerAction(profileForm)" translate>
+                    REGISTER
+                </button>
+            </div>
+            <div class="buttons churchs-bottom-bar-buttons-50">
+                <button class="button button-energized button-full" ng-click="gotoMain()" translate>SKIP_UP</button>
+            </div>
+        </ion-footer-bar>
+    </ion-pane>
+</form>

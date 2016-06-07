@@ -1,0 +1,42 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button"
+               ng-click="goBack()"   translate>BACK</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" scrollbar-y="false">
+        <div class="churchs-use-coupon-top-label" translate>TOEARN_REWARD_NEW</div>
+        <div class="churchs-use-coupon-top-label" translate>TEXT_COUPON_USED</div>
+        <div class="churchs-white-container">
+            <div class="item churchs-coupons-list-item">
+                <img src="img/LCP1410274340944YRHV.jpg" class="coupos-item-image"/>
+                <img src="img/icons/icon_information.png" class="coupos-item-info-icon"/>
+            </div>
+            <div class="row">
+                <div class="col col-50 cupon-code-label-container">
+                    <span class="cupon-code-label" translate>
+                        CHURCHS_COUPON_CODE
+                    </span>
+                </div>
+                <div class="col col-50 cupon-code-text">4680</div>
+            </div>
+            <div class="churchs-wrap-container row"></div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar churchs-bottom-bar">
+        <div class="buttons churchs-bottom-bar-buttons-50">
+            <button class="button button-balanced button-full" translate>TOGGLE_DISPLAY</button>
+        </div>
+        <div class="buttons churchs-bottom-bar-buttons-50">
+            <button class="button button-energized button-full" translate>HOME</button>
+        </div>
+    </ion-footer-bar>
+</ion-pane>

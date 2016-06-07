@@ -1,0 +1,31 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button"
+              ng-click="gotoMain()" translate>HOME</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" scrollbar-y="false">
+        <div class="padding churchs-header-title" translate>COUPONS_UP</div>
+        <div class="list">
+            <div class="item churchs-coupons-list-item" ng-repeat="item in testCouponsData">
+                <img src="img/LCP1410274340944YRHV.jpg" class="coupos-item-image"/>
+                <img src="img/icons/check_normal.png" class="coupos-item-select-icon"/>
+                <img src="img/icons/icon_information.png" class="coupos-item-info-icon"/>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar churchs-bottom-bar">
+        <button class="button button-full button-balanced saving-coupons-bottom-bar-button" ng-click="gotoCouponUse()"
+                translate>
+            USE_SELECT_COUPON
+        </button>
+    </ion-footer-bar>
+</ion-pane>

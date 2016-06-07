@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE8"
+        on line 7 of ionic.app.scss
+
+2: To customize the look and feel of Ionic, you can override the variables
+3: in ionic's _variables.scss file.
+4: *\/
+5: 
+6: //Custom sass
+7: //订制基础颜色，与设计图一致
+8: $c1_1: #f2e9dc;
+9: $c1_2: #ffffff;
+10: $c1_3: #959595;
+11: $c1_4: #e7e7e7;
+12: $c2_1: #d72c20;
+
+Backtrace:
+ionic.app.scss:7
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:1323:in `rescue in block in find_encoding_error'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:1320:in `block in find_encoding_error'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:1319:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:1319:in `each_with_index'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:1319:in `find_encoding_error'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/util.rb:896:in `check_sass_encoding'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/engine.rb:423:in `check_encoding!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/engine.rb:379:in `_to_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/exec/sass_scss.rb:50:in `process_result'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.10/bin/scss:13:in `<top (required)>'
+C:/Ruby200-x64/bin/scss:23:in `load'
+C:/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE8\"\A         on line 7 of ionic.app.scss\A \A 2: To customize the look and feel of Ionic, you can override the variables\A 3: in ionic's _variables.scss file.\A 4: */\A 5: \A 6: //Custom sass\A 7: //订制基础颜色，与设计图一致\A 8: $c1_1: #f2e9dc;\A 9: $c1_2: #ffffff;\A 10: $c1_3: #959595;\A 11: $c1_4: #e7e7e7;\A 12: $c2_1: #d72c20;"; }

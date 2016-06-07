@@ -1,0 +1,717 @@
+@import 'layout.css';
+/*popup*/
+.popup-head{
+    border-bottom: 1px solid transparent;
+}
+.popup-head .popup-title{
+    color: #96070a;
+    font-size: 1.5em;
+}
+.popup-body span,
+.popup-sub-title{
+    color: #d72c20;
+}
+.popup-buttons{
+    border-top: 1px solid #96070a;
+}
+.popup-container{
+    background: rgba(255, 203, 4, 0.5);
+}
+.popup-no-hreader .popup-head{
+    display: none;
+}
+.popup-container .popup{
+    position: relative;
+    margin: 0 7%;
+    width: 86%;
+    background-color: #ffffff;
+}
+/*popup end*/
+.popup-body {
+    overflow: auto;
+}
+.base-background {
+    background-image: url("../img/image_bg.jpg");
+}
+.churchs-wrap-container{
+    display: block;
+}
+.app-launch-background {
+    width: 100%;
+    height: 100%;
+}
+.churchs-content {
+    margin-top: 5em;
+}
+
+.churchs-header-bar .button {
+    color: #96070a;
+}
+
+.churchs-header-bar-logo {
+    height: 4em !important;
+}
+
+.churchs-header-logo {
+    margin-top: 0.3em;
+    width: 3.5em;
+}
+
+.new-register-image_food {
+    padding-bottom: 1.5em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    width: 100%;
+}
+
+.icon-in-red-button {
+    margin-right: 0.5em;
+    vertical-align: middle;
+    width: 1.3em;
+}
+
+.text-in-red-button {
+    vertical-align: middle;
+}
+
+.churchs-bottom-bar {
+    padding: 0;
+}
+
+.churchs-bottom-bar-buttons-50{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 50%;
+}
+.churchs-bottom-bar-buttons-50 .button{
+    margin: 0;
+}
+
+.churchs-header-title {
+    line-height: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #d72c20;
+}
+
+.churchs-sub-header-title {
+    padding-top: 1.5em;
+    text-align: center;
+    color: #d72c20;
+    padding-bottom: 1em;
+}
+
+.churchs-profile-form {
+    background: #f2e9dc;
+}
+
+.churchs-bottom-diliver-item {
+    border-bottom: 1px solid #96070a;
+}
+
+.churchs-no-margin-label {
+    margin: 0;
+}
+
+.churchs-smail-label {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.churchs-checkbox-item {
+    vertical-align: middle;
+    display: block;
+}
+
+.churchs-checkbox-item .input-label {
+    max-width: 100%;
+    width: 70%;
+    display: inline-block;
+}
+
+.churchs-checkbox-item input {
+    background-size: 100% !important;
+    height: 1.7em;
+    display: inline-block;
+}
+
+.churchs-checkbox-item input[type="checkbox"] {
+    background: url("../img/icons/icon_checkbox_uncheck.png");
+}
+
+.churchs-checkbox-item input[type="checkbox"]:checked {
+    background: url("../img/icons/icon_checkbox_check.png");
+}
+
+.header-bar-icon-facebook {
+    z-index: 2;
+    height: 1.8em;
+    margin-top: 0.25em;
+    background-color: #96070a;
+    -webkit-border-radius: 1.8em;
+    -moz-border-radius: 1.8em;
+    border-radius: 1.8em;
+    border: dashed 0 #96070a;
+    position: absolute;
+}
+
+.header-bar-icon-menu {
+    position: absolute;
+    z-index: 2;
+    right: 5.3em;
+    height: 1.8em;
+    margin-top: 0.25em
+}
+
+.home-image_food {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.churchs-zip-input-item {
+    background: #ffffff;
+}
+
+.churchs-zip-input-item input {
+    text-align: center;
+}
+
+.main-menu-button {
+    border-color: transparent !important;
+}
+
+.main-menu-button img {
+    height: 3em;
+    margin-left: 30%;
+    display: block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.main-menu-red-text {
+    color: #96070a;
+}
+
+.main-menu-light-text {
+    color: #ffffff;
+}
+
+.main-menu-row {
+    padding: 0;
+}
+
+.bottom-bar-icon-about {
+    position: absolute;
+    z-index: 2;
+    height: 1.5em;
+    margin-top: 0.5em;
+}
+
+.bottom-bar-copyright-text {
+    font-size: 0.8em;
+}
+
+.churchs-header-left-button:before {
+    margin-right: 0.3em;
+}
+
+.churchs-feedback-star-btn {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1em;
+    -moz-box-shadow: 5px 5px 5px black;
+    -webkit-box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.churchs-reward-star-label {
+    color: #96070a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.churchs-reward-star-number {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.reward-star-number-text {
+    font-size: 4em;
+    color: #d4334a;
+    font-weight: bold;
+    font-family: 'FuturaBold';
+}
+
+.churchs-reward-star-row {
+    background: #d72c20;
+    padding-top: 1em !important;
+}
+
+.churchs-while-row {
+    background: #ffffff;
+    padding: 0.5em;
+}
+
+.star {
+    width: 100%;
+}
+
+.star-select .star-light {
+    display: block;
+}
+
+.star-light,
+.star-select .star-dark {
+    display: none;
+}
+
+.header-bar-icon-reload {
+    margin-right: 0.6em;
+    margin-top: 0.2em;
+    height: 1.4em;
+}
+
+.churchs-menus-iframe {
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-red-label {
+    color: #96070a;
+    padding: 1em 1em 0 1em;
+}
+
+/*churchs-checkbox-list-item style */
+.churchs-checkbox-list-item {
+    border-width: 0px;
+}
+
+.churchs-checkbox-list-item span {
+    color: #96070a;
+}
+
+.churchs-checkbox-list-item .checkbox input + .checkbox-icon {
+    width: 1.3em;
+    background-size: 100% !important;
+    height: 1.3em;
+    background: url("../img/icons/icon_show_unread.png");
+}
+
+.churchs-checkbox-list-item .checkbox input:checked + .checkbox-icon {
+    background: url("../img/icons/icon_show_read.png");
+}
+
+.churchs-checkbox-list-item .checkbox-icon:before,
+.churchs-checkbox-list-item .checkbox-icon:after {
+    display: none;
+}
+
+/*churchs-checkbox-list-item style end*/
+.list-no-margin {
+    margin: 0;
+    background: #ffffff;
+}
+
+.churchs-location-content {
+    background: #ffffff;
+    padding: 1em;
+}
+
+.location-red-label {
+    color: #d72c20;
+}
+
+/*churchs-location-search-btn*/
+.churchs-location-search-btn {
+    padding: 0;
+    border-width: 0;
+}
+
+.churchs-location-search-btn input {
+    width: 100%;
+}
+
+.churchs-location-search-btn .item-input-wrapper {
+    background: #f2e9dc;
+}
+
+/*churchs-location-search-btn end*/
+
+/*/!*churchs-location-detail-list-item*/
+.churchs-location-detail-list-item {
+    position: relative;
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid #96070a;
+    border-bottom: 1px solid #96070a;
+    background: #ffffff;
+    padding: 0.5em 0 0.5em 1em;
+}
+
+.churchs-location-detail-list-item .location-icon-number {
+    width: 100%;
+}
+
+.churchs-location-detail-list-item .col {
+    padding: 0;
+    position: relative;
+}
+
+.churchs-location-detail-list-item .location-item-number {
+    text-align: center;
+    width: 31%;
+    margin-top: 8%;
+    margin-right: 5%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+.detail-list-item-text-spans div {
+    white-space: normal;
+    color: #d72c20;
+    padding: 0.5em;
+}
+
+.detail-list-item-text-spans .location-icon-pin {
+    height: 1em;
+}
+
+.detail-list-item-icon-container {
+    top: 1em;
+    position: absolute;
+}
+
+.location-icon-map {
+    margin-top: -2.5em;
+    top: 50%;
+    position: absolute;
+    width: 1.5em;
+}
+
+.location-icon-phone {
+    top: 50%;
+    margin-top: 0.5em;
+    position: absolute;
+    width: 1.5em;
+}
+
+.location-text-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*churchs-location-detail-list-item end*/
+.saving-coupons-bottom-bar-button {
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+}
+
+.churchs-coupons-list-item {
+    border-width: 0;
+    background: #ffffff;
+    position: relative;
+    padding: 0.5em;
+}
+
+.coupos-item-image {
+    width: 100%;
+}
+
+.coupos-item-select-icon {
+    margin-left: -1.5em;
+    width: 3em;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -1.5em;
+}
+
+.coupos-item-info-icon {
+    width: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.churchs-use-coupon-top-label {
+    padding: 0.4em;
+    text-align: center;
+    color: #96070a;
+}
+
+.churchs-white-container {
+    background: #ffffff;
+}
+
+.cupon-code-label-container {
+    text-align: right;
+}
+
+.cupon-code-label {
+    display: inline-block;
+    white-space: normal;
+    word-break: break-word;
+    color: #96070a;
+    width: 7em;
+}
+
+.cupon-code-text {
+    padding-top: 0.5em;
+    color: #78c255;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.survey-bottom-diliver-item {
+    margin: 0;
+    border-bottom-color: #96070a;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.suery-type-list {
+    padding: 0;
+}
+
+.survey-take-picture-container {
+    padding: 0.5em 1em;
+    background: #ffffff;
+}
+
+.survey-bottom-container {
+    background-color: #f2e9dc
+}
+
+.survey-red-text {
+    color: #96070a;
+    font-size: 0.9em;
+}
+
+.survey-toggle-container {
+    border-top: 0;
+    border-bottom: 1px solid #96070a;
+    position: relative;
+    padding: 16px 16px 16px 5px;
+}
+
+/*survey-toggle*/
+.survey-toggle {
+    height: 2.7em;
+    width: 5em;
+    margin-right: 0.5em;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    margin-top: -1.5em;
+}
+
+.survey-toggle .handle {
+    display: none;
+}
+
+.survey-toggle .track {
+    background-color: transparent;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+    height: 100%;
+    background-image: url("../img/icons/button_toggle_no.png");
+}
+
+.survey-toggle input:checked + .track {
+    background-color: transparent;
+    background-image: url("../img/icons/button_toggle_yes.png");
+}
+
+/*survey-toggle end*/
+
+/*survey-rating-bar*/
+.survey-rating-bar{
+    padding: 0 !important;
+    position: relative;
+    margin-left: 10%;
+    height: 4em;
+}
+ul.survey-rating-bar li{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    padding: 5px 0;
+    display: inline-block;
+ }
+.survey-rating-bar .ion-ios-star-outline:before,
+.survey-rating-bar .ion-ios-star:before {
+    width: 0;
+    content: '';
+}
+.survey-rating-bar .ion-ios-star{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/icons/icon_star_light_space.png");
+}
+.survey-rating-bar .ion-ios-star-outline{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/icons/icon_star_dark_space.png");
+}
+/*survey-rating-bar end*/
+
+.survey-rating-bar-label{
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+.survey-comment-input{
+    padding: 0.5em;
+    vertical-align: top !important;
+    text-align: start;
+    width: 94%;
+    display: block !important;
+    height: 6em !important;
+    margin-left: 3%;
+}
+.survey-submit-buton{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    width: 94%;
+    margin-left: 3%;
+}
+.profile-full-form{
+    background: transparent;
+    display: block;
+}
+.teams-and-conditions-header-bar{
+    height:3em;
+    background: transparent;
+    border-bottom: 1px solid #96070a;
+}
+.churchs-teams-and-conditions-content{
+    margin-top: 3em;
+}
+.teams-and-conditions-title{
+    color: #d72c20;
+}
+.zip-dialog-row{
+    padding-top: 1em;
+    border-bottom: 1px solid #96070a;
+}
+.zip-dialog-row p{
+    color: #96070a;
+}
+.churchs-link{
+    text-decoration: underline !important;
+}
+.take-picture-dialog-picture{
+    background-color: #f2e9dc;
+    padding: 0 15%;
+    display: block;
+    width: 100%;
+}
+.picture-dialog-captured-picture{
+    width: 100%;
+    margin-bottom: 1em;
+}
+.choose-mychurchs-dialog-close-icon{
+    width: 10%;
+    z-index: 2;
+    right: -6%;
+    position: absolute;
+    top: -6%;
+}
+.contact-dialog-row{
+    padding-top: 1em;
+    border-bottom: 1px solid #96070a;
+}
+.contact-dialog-no-bottomborder-row{
+    border-bottom-color: transparent;
+}
+.contact-dialog-row p{
+    color: #d72c20;
+}
+.contact-dialog-toggle-label{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+}
+.contact-dialog-toggle{
+    position: relative;
+    display: inline-block;
+}
+.main-coupon-count{
+    height: 2em;
+    width: 2em;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: #ffffff;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    border: dashed 0 #ffffff;
+}
+.main-coupon-count-number{
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    color: #ffffff;
+    background-color: #d72c20;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    border-radius: 1.5em;
+    border: dashed 0 #d72c20;
+    top: 0.25em;
+    right: 0.25em;
+    text-align: center;
+    vertical-align: middle;
+}
+.main-coupon-container{
+    margin-top: 1em;
+    padding-left: 0.5em;
+    width: 100%;
+    position: relative;
+    padding-right: 0.5em;
+}
+.main-coupon-image{
+    width: 100%;
+}
+.main-coupon-privious-icon{
+    left: 5%;
+    margin-top: -1em;
+    top: 50%;
+    position: absolute;
+    width: 2em;
+}
+.main-coupon-nex-icon{
+    right: 5%;
+    margin-top: -1em;
+    top: 50%;
+    position: absolute;
+    width: 2em;
+}
+.picture-dialog-captured-picture-container{
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    max-height: 20em;
+}
+.feedback-survey-dialog-title{
+    font-weight: bold;
+    color: #96070a;
+    font-size: 1.4em;
+}
+.ion-slide-box-hide-side-page .slider-pager{
+    display: none;
+}

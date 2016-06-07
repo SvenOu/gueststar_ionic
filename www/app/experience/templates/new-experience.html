@@ -1,0 +1,50 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button"
+             ng-click="goBack()"  translate>BACK</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" scrollbar-y="false" scroll="true">
+        <div class="padding churchs-header-title" translate>FEEDBACK_SURVEY</div>
+        <div class="padding churchs-sub-header-title" translate>KNOWN_EXPRIENCE</div>
+        <div class="list suery-type-list list-no-margin">
+            <ion-checkbox class="churchs-checkbox-list-item survey-bottom-diliver-item" ng-repeat="item in EXPERIENCE_TYPES"
+                          ng-model="item.isChecked"
+                          ng-checked="item.isChecked">
+                {{ item.value }}
+            </ion-checkbox>
+        </div>
+        <div class="survey-take-picture-container">
+            <div class="survey-red-text" translate>
+                PICTURE_REQUIRE
+            </div>
+            <button class="button button-full button-balanced" ng-click="btnTakePictureClick()">
+                <img id="newExperienceBtnTakePicture" src="img/icons/icon_camera.png" class="icon-in-red-button"/>
+                <span id="newExperienceBtnTakePictureText" class="text-in-red-button" translate>TAKE_RECEIPT_PICTURE</span>
+            </button>
+        </div>
+        <div class="survey-bottom-container">
+            <div class="item survey-toggle-container">
+                <span class="survey-red-text" translate>ENJOY_CHURCHS</span>
+                <label class="toggle survey-toggle">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </div>
+            <div class="survey-red-text survey-rating-bar-label" translate>RATE_QEQUIRED_TIP</div>
+            <rating class="survey-rating-bar" ng-model="rate" max="max"></rating>
+            <textarea  class="survey-comment-input" type="text" placeholder="{{ 'OPITION_COMMENT' | translate }}"></textarea>
+            <button class="button button-balanced survey-submit-buton" ng-click="gotoExperienceDetail()" translate>SUBMIT</button>
+        </div>
+    </ion-content>
+</ion-pane>

@@ -1,0 +1,67 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button" ng-click="gotoMain()" translate>HOME</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" has-bouncing="false" scrollbar-y="false">
+        <div class="padding churchs-header-title" translate>CHICKEN_REWARDS</div>
+        <div class="padding churchs-sub-header-title" translate="NUMBER_VISITS" translate-values="{ vsitNumber: 6}"></div>
+        <button class="button button-balanced churchs-feedback-star-btn" translate>FEEDBACK_FOR_REWARD_START</button>
+        <div class="churchs-wrap-container"></div>
+        <div class="row churchs-while-row">
+            <div class="col col-67 churchs-reward-star-label" translate="REWARD_STAR_LABEL" translate-values="{ today: '04/07/2015'}"></div>
+            <div class="col churchs-reward-star-number" >
+                <span class="reward-star-number-text">01</span>
+            </div>
+        </div>
+        <div class="row churchs-reward-star-row">
+            <div class="col-25 star-select">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+            <div class="col-25 star-select">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+            <div class="col-25 star-select">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+            <div class="col-25">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+        </div>
+        <div class="row churchs-reward-star-row">
+            <div class="col-25">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+            <div class="col-25">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+            <div class="col-25">
+                <img src="img/icons/icon_reward_star_dark.png" class="star star-dark"/>
+                <img src="img/icons/icon_reward_star_light.png" class="star star-light"/>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-energized" ng-click="showRewardSurveyDialog()">
+        <div class="buttons">
+            <img src="img/icons/icon_help.png" class="bottom-bar-icon-about"/>
+        </div>
+        <div class="title">
+            <span class="main-menu-light-text bottom-bar-copyright-text" translate>HOW_GET_STAR_REWARD</span>
+        </div>
+        <div class="buttons"></div>
+    </ion-footer-bar>
+</ion-pane>

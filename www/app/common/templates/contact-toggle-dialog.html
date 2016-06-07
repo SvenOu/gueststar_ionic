@@ -1,0 +1,22 @@
+<div class="contact-dialog-row">
+    <p class="contact-dialog-toggle-label" translate>CONTACT_CONTENT_QUESTION</p>
+    <label class="toggle survey-toggle contact-dialog-toggle">
+        <input type="checkbox" ng-model="contactToggleDialogInfo.hasContact">
+        <div class="track">
+            <div class="handle"></div>
+        </div>
+    </label>
+</div>
+<div class="contact-dialog-row" ng-if="contactToggleDialogInfo.hasContact">
+    <p translate>EMAIL_ADDRESS_REQUIRED</p>
+    <input type="text" ng-model="contactToggleDialogInfo.email" required>
+</div>
+<div class="contact-dialog-row contact-dialog-no-bottomborder-row" ng-if="contactToggleDialogInfo.hasContact">
+    <p translate>CONTACT_PHONE_NUMBER</p>
+    <input type="text" ng-model="contactToggleDialogInfo.phone" required>
+</div>
+
+<button class="button button-full button-balanced" ng-click="dialogButtonsClick('contactToggleDialogSubmit')" translate>
+    SUBMIT
+</button>
+

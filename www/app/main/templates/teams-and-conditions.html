@@ -1,0 +1,23 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header teams-and-conditions-header-bar">
+        <div class="buttons"></div>
+        <div class="title churchs-header-bar-logo">
+            <div class="title teams-and-conditions-title" translate>TEAMS_AND_CONDITIONS</div>
+        </div>
+        <div class="buttons">
+        </div>
+    </div>
+    <ion-content class="churchs-teams-and-conditions-content" scrollbar-y="false" scroll="false">
+        <iframe class="churchs-menus-iframe" src="app\main\templates\teams_and_conditions-content.html"></iframe>
+    </ion-content>
+    <ion-footer-bar class="bar churchs-bottom-bar">
+        <div class="buttons col-50 churchs-bottom-bar-buttons-50">
+            <button class="button button-balanced button-full" ng-click="goBack()" translate>
+                DESLINE
+            </button>
+        </div>
+        <div class="buttons col-50 churchs-bottom-bar-buttons-50">
+            <button class="button button-energized button-full" ng-click="gotoMain()" translate>AGREE</button>
+        </div>
+    </ion-footer-bar>
+</ion-pane>

@@ -1,0 +1,44 @@
+<ion-pane class="base-background">
+    <div class="bar bar-header churchs-header-bar">
+        <div class="buttons">
+            <a class="button icon-left ion-chevron-left button-clear button-energized churchs-header-left-button"
+               ng-click="goBack()"  translate>BACK</a>
+        </div>
+        <div class="title churchs-header-bar-logo">
+            <img src="img/image_navbar_logo.png" alt="app-logo" class="churchs-header-logo"/>
+        </div>
+        <div class="buttons">
+            <img src="img/icons/icon_top_menu.png" class="header-bar-icon-menu"/>
+            <button class="button button-clear" ng-click="toggleLocale()" translate>LANGUAGE_LABEL</button>
+        </div>
+    </div>
+    <ion-content class="churchs-content" has-bouncing="false" scrollbar-y="false">
+        <div class="padding churchs-header-title" translate>LOCATION_UP</div>
+        <div class="list">
+            <div class="row churchs-location-detail-list-item" ng-repeat="item in testLocationsData">
+                <div class="col col-20">
+                    <div class="detail-list-item-icon-container">
+                        <img class="location-icon-number" src="img/icons/icon_number.png"/>
+                        <span class="location-item-number">{{ item.num }}</span>
+                    </div>
+                </div>
+                <div class="col detail-list-item-text-spans">
+                    <div class="location-text-title" translate>
+                        CHURCHS_CHICKEN
+                    </div>
+                    <div>
+                        I am a goog man!I am a goog man!I am a goog man!I am a goog man!
+                    </div>
+                    <div>
+                        <img class="location-icon-pin" src="img/icons/icon_pin.png">
+                        <span>fdsfdsfdsdsfsdsdf</span>
+                    </div>
+                </div>
+                <div class="col col-10">
+                    <img class="location-icon-map" src="img/icons/icon_map.png">
+                    <img class="location-icon-phone" src="img/icons/icon_phone.png">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>

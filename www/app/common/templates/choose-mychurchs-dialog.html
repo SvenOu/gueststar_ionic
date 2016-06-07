@@ -1,0 +1,13 @@
+<img src="img/icons/icon_close.png" class="choose-mychurchs-dialog-close-icon" ng-click="dialogButtonsClick('myLocationDialogIconClose')"/>
+<button class="button button-full button-balanced" ng-click="dialogButtonsClick('myCurrentLocation')">
+    <img src="img/icons/icon_location.png" class="icon-in-red-button"/>
+    <label class="text-in-red-button" translate>MY_CURRENT_LOCATION</label>
+</button>
+<div class="item item-input-inset churchs-location-search-btn">
+    <label class="item-input-wrapper">
+        <input type="text" placeholder="{{ 'ZIP_OR_ADDRESS' | translate }}">
+    </label>
+    <button class="button button-balanced" ng-click="dialogButtonsClick('ziporAddress')">
+        <img src="img/icons/icon_find.png" class="icon-in-red-button"/>
+    </button>
+</div>
