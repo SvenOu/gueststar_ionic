@@ -1,6 +1,9 @@
 {
   "name": "Churchs",
-  "app_id": "com.tts.gueststar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
   "gulpStartupTasks": [
     "sass",
     "watch"
@@ -15,5 +18,6 @@
       "browser": "crosswalk",
       "version": "12.41.296.5"
     }
-  ]
+  ],
+  "id": "com.tts.gueststar"
 }
